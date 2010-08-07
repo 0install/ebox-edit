@@ -133,4 +133,5 @@ def makeEditor(powerbox, var myFile) {
 	swtGrid`$mainArea: $textArea.X.Y`
 	mainArea.getLayout().setMarginWidth(0)
 	mainArea.getLayout().setMarginHeight(0)
+	mainArea.layout()
 }
