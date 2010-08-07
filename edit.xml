@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
-<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface"
-  	   xmlns:e="http://erights.org/0install">
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:e="http://erights.org/0install">
   <name>edit</name>
   <summary>E text editor</summary>
   <description>
     This is a very simple proof-of-concept text editor that can be confined using the EBox sandbox system.
   </description>
 
-  <feed-for interface='http://0install.net/tests/ebox-edit.xml'/>
+  <feed-for interface="http://0install.net/tests/ebox-edit.xml"/>
 
-  <implementation id="." version="0.1-pre" e:main='edit.e-swt'>
-    <requires interface='http://0install.net/tests/ebox-help.xml'>
-      <environment name='help' insert=''/>
+  <implementation e:main="edit.e-swt" id="." released="2010-08-07" version="0.1">
+    <requires interface="http://0install.net/tests/ebox-help.xml">
+      <environment insert="" name="help"/>
     </requires>
   </implementation>
 </interface>
