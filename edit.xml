@@ -4,9 +4,13 @@
   <name>edit</name>
   <summary>E text editor</summary>
   <description>
+    This is a very simple proof-of-concept text editor that can be confined using the EBox sandbox system.
   </description>
+
+  <feed-for interface='http://0install.net/tests/ebox-edit.xml'/>
+
   <implementation id="." version="0.1-pre" e:main='edit.e-swt'>
-    <requires interface='/home/talex/Projects/zero-install/ebox/demo/help/help.xml'>
+    <requires interface='http://0install.net/tests/ebox-help.xml'>
       <environment name='help' insert=''/>
     </requires>
   </implementation>
